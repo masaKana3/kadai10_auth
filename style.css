@@ -1,0 +1,268 @@
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    #submit-button {
+        font-size: 0.9em;
+        padding: 8px 10px;
+    }
+
+    table {
+        font-size: 0.9em; /* フォントサイズを小さくする */
+    }
+
+    table th, table td {
+        padding: 8px; /* パディングを減らす */
+    }
+
+    .data-table-container {
+        width: 100%; /* コンテナ幅を画面いっぱいにする */
+        padding: 10px; /* 余白を減らす */
+    }
+}
+
+/* 全体のスタイル */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* ヘッダー */
+h1 {
+    text-align: center;
+    font-size: 1.8em;
+    margin: 20px 0;
+    color: #444;
+}
+
+/* コンテナ */
+.container {
+    width: 90%;
+    max-width: 800px;
+    background: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+/* 質問の説明文 */
+.container p {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.survey li {
+    margin: 10px 0;
+    font-size: 1em;
+    font-weight: bold;
+    color: #555;
+}
+
+/* ラベルとラジオボタン */
+label {
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* セレクトボックス */
+.area-box select {
+    width: 100%;
+    padding: 8px;
+    font-size: 1em;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+/* ボタン */
+#submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0056b3;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#submit-button:hover {
+    background-color: #97bbd3;
+}
+
+#back {
+    text-align: right;
+}
+
+.text-box {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.input-box {
+    width: 90%;
+    border: #555;
+    border-radius: 8px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.button-box {
+    display: flex; /* 子要素を横並びに */
+    justify-content: center; /* 左寄せに配置 */
+    align-items: center; /* 縦方向の位置を中央揃え */
+    gap: 15px; /* 子要素間のスペース */
+    margin: 20px 0; /* コンテナ全体の上下余白 */
+}
+
+.button-box button {
+    padding: 10px 15px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #b7aea7;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-box button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.button-box button:active {
+    background-color: #004089;
+    transform: translateY(0);
+}
+
+#download-img {
+    display: inline-block; /* アイコンをボタンと同様に扱う */
+    cursor: pointer; /* アイコンをクリック可能に */
+}
+
+#download-img img {
+    vertical-align: middle; /* アイコンの縦位置をボタンと揃える */
+    transition: transform 0.2s ease; /* ホバー時の動きを追加 */
+}
+
+#download-img img:hover {
+    transform: scale(1.1); /* ホバー時に少し拡大 */
+}
+
+.login-container {
+    display: block; /* ボタンを縦に配置 */
+    width: 80%;
+    max-width: 500px;
+    background: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+/* 表全体のスタイル */
+table {
+    width: 100%;
+    border-collapse: collapse; /* セル間の余白をなくす */
+    margin: auto;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+/* 表ヘッダー */
+table th {
+    background-color: #0056b3;
+    color: #fff;
+    border: 1px solid #ddd; /* セルの境界線 */
+    text-align: center;
+    padding: 10px;
+    font-size: 1em;
+}
+
+/* 表セル */
+table td {
+    padding: 10px;
+    border: 1px solid #ddd; /* セルの境界線 */
+    text-align: left; /* 左揃え */
+    font-size: 0.9em;
+}
+
+/* 行の交互の背景色 */
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* リンクのスタイル */
+table td a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+table td a:hover {
+    text-decoration: underline;
+}
+
+/* アイコン画像のスタイル */
+table td img {
+    vertical-align: middle; /* テキストと画像を揃える */
+}
+
+.data-table-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto; /* 上下左右中央揃え */
+    padding: 20px;
+}
+
+.list-container {
+    text-align: center; /* 子要素を中央寄せ */
+    margin: 0 auto; /* コンテナ自体を中央揃え */
+}
+
+.list-container ul {
+    list-style: none; /* リストのマーカーを非表示 */
+    padding: 0; /* デフォルトのパディングを削除 */
+    display: inline-block; /* リスト全体を中央寄せ */
+    text-align: left; /* リスト内のテキストを左寄せ*/
+}
+
+.list-container li {
+    margin-bottom: 5px; /* 各リストアイテム間の余白 */
+}
+/* 
+#download-img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+} */
